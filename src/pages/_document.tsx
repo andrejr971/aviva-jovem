@@ -37,13 +37,19 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-BR">
         <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Rock+Salt&family=Poppins:wght@400;500;700&display=swap"
             rel="stylesheet"
           />
 
-          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+          <link rel="stylesheet" href="styles/styles.css" />
+          <link
+            rel="shortcut icon"
+            href="assets/images/favicon.png"
+            type="image/x-icon"
+          />
         </Head>
         <body>
           <Main />

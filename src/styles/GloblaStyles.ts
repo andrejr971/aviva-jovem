@@ -1,91 +1,107 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  :root {
+    --orange: #E46713;
+    --orange_dark: #DA251C;
+    --orange_light: #EB582F;
+
+    --green: #008E96;
+    --green_dark: #006186;
+    --green_light: #22A694;
+
+    --white: #EFECE9;
+    --white_dark: #D1D0CC;
+    --white_light: #FDFBFA;
+
+    --black: #242120;
+    --black_dark: #121210;
+    --black_light: #413E3E;
+
+    --error: #EB3D3D;
+    --error_dark: #D03333;
+    --error_light: #F05454;
+
+    --success: #32D957;
+    --success_dark: #28BB49;
+    --success_light: #50E170;
+
+    --warning: #FFCE52;
+    --warning_dark: #D9B043;
+    --warnin_light: #FFD76B;
+
+    --info: #0063F7;
+    --info_dark: #004FC4;
+    --info_light: #5B8DEF;
+
+    --gray_100: #495057;
+    --gray_200: #868E96;
+    --gray_300: #ADB5BD;
+    --gray_400: #CED4DA;
+    --gray_500: #DEE2E6;
+    --gray_600: #E9ECEF;
+
+    --gradient_orange: linear-gradient(225deg, #DA251C 0%, #E46713 100%);
+    --gradient_orange2: linear-gradient(227.94deg, #DA251C -26.08%, rgba(228, 103, 19, 0.07) 100%);
+    --gradient_green: linear-gradient(225deg, #006186 0%, #028E95 100%);
+    --gradient_white: linear-gradient(225deg, #D1CFCB 0%, #FDF9F7 100%);
+    --gradient_black: linear-gradient(225deg, #252120 0%, #413E3E 100%);
+    --gradient_blue: linear-gradient(225deg, #014FC3 0%, #5B8DEF 100%);
+    --gradient_red: linear-gradient(225deg, #D03333 0%, #F05554 100%);
+
+    --shadow_orange: 0px -85px 208px rgba(228, 103, 19, 0.07), 0px -25.625px 62.7059px rgba(228, 103, 19, 0.0456112), 0px -10.6433px 26.0448px rgba(228, 103, 19, 0.035), 0px -3.84948px 9.4199px rgba(228, 103, 19, 0.0243888);
+    --shadow_black: 0px 12px 97px rgba(36, 33, 32, 0.19), 0px 4.3802px 35.4066px rgba(36, 33, 32, 0.131096), 0px 2.1265px 17.1892px rgba(36, 33, 32, 0.105695), 0px 1.04245px 8.42649px rgba(36, 33, 32, 0.0843048), 0px 0.412187px 3.33185px rgba(36, 33, 32, 0.0589035);
+
+    --title_1: 500 7.2rem/130% 'Poppins', sans-serif;
+    --title_2: 500 4.8rem/130% 'Poppins', sans-serif;
+    --title_3: 500 3.6rem/130% 'Poppins', sans-serif;
+    --title_4: 500 2.4rem/130% 'Poppins', sans-serif;
+
+    --text_1: 400 2.4rem/130% 'Open sans', sans-serif;
+    --text_2: 400 2.0rem/130% 'Open sans', sans-serif;
+    --text_3: 400 1.6rem/130% 'Open sans', sans-serif;
+    --text_4: 400 1.4rem/130% 'Open sans', sans-serif;
+
+    --link: 600 1.4rem/130% 'Open sans', sans-serif;
+
   }
 
-  :root {
-    --background-dark: #121214;
-    --background-light: #F1F2F0;
-
-    --black: #202024;
-    --black-light: #5B5D5F;
-    --black-dark: #19181B;
-
-    --white: #F5F5F5;
-    --white-light: #F6F6F6;
-    --white-dark: #B8B8B8;
-
-    --primary: #5FE36A;
-    --primary-light: #64FA9B;
-    --primary-dark: #44AE7A;
-
-    --secondary: #59F0BB;
-    --secondary-light: #82F8A2;
-    --secondary-dark: #3FAFB8;
-
-    --auxiliary: #9376E3;
-    --auxiliary-light: #98A1ED;
-    --auxiliary-dark: #9256AD;
-
-    --gray-100: #3A3A3A;
-    --gray-200: #4A4A4A;
-    --gray-300: #5A5A5A;
-    --gray-400: #6A6A6A;
-    --gray-500: #7A7A7A;
-    --gray-600: #8A8A8A;
-    --gray-700: #9A9A9A;
-
-    --error: #DB0025;
-    --error-light: #FB657F;
-    --error-dark: #C30500;
-
-    --warning: #F9C117;
-    --warning-light: #FCD55D;
-    --warning-dark: #C19611;
-
-    --info: #0B30DB;
-    --info-light: #5774F6;
-    --info-dark: #132C9F;
-
-    --success: #00DB29;
-    --success-light: #95F066;
-    --success-dark: #00AA66;
-
-    --gradient-green: linear-gradient(215.11deg, #64FA9B 11.63%, #5FE36A 81.82%);
-    --gradient-blue: linear-gradient(180deg, #00C6FB 0%, rgba(0, 91, 234, 0.5) 100%);
-    --gradient-dark:  linear-gradient(252.76deg, rgba(40, 40, 45, 0) -15.44%, #28282D 90.31%);
-    --gradient-green-light: linear-gradient(226.58deg, #64FA9B 10.45%, rgba(95, 227, 106, 0) 94.38%);
-    --gradient-hite: linear-gradient(202.21deg, #FFFFFF -6.53%, rgba(255, 255, 255, 0) 98.93%);
-
-    --shadow-green: 0px 0px 80px -30px rgba(95, 227, 106, 0.59);
-    --shadow-dark: 0px 0px 80px -30px rgba(32, 32, 36, 0.7);
+  *, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
 
   html {
     font-size: 62.5%;
-  }
-
-  html, body, #__next {
+    scroll-behavior: smooth;
     height: 100vh;
   }
 
   body {
-    font-family: 'Mukta', sans-serif;
-    font-size: 1.6rem;
-    color: var(--white);
+    height: 100vh;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
 
-    background: var(--background-dark);
+    background: var(--black_dark);
 
-    overflow-x: hidden;
-  }
+    scroll-behavior: smooth;
 
-  input, textarea {
-    font-size: 1.6rem;
-    color: inherit;
+    font: var(--text_1);
+    color: var(--white_light);
+
+    &::-webkit-scrollbar {
+      width: 0.8rem;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--black);
+      border-radius: 0.4rem;
+    }
   }
 
   button {
