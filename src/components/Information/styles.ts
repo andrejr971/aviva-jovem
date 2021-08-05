@@ -56,6 +56,10 @@ export const Card = styled.div`
     font: var(--title_3);
     color: var(--black);
     font-weight: normal;
+
+    @media screen and (max-width: 640px) {
+      font-size: 3.2rem;
+    }
   }
 
   &:last-child {
