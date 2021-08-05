@@ -28,7 +28,7 @@ export const Container = styled.button<ContainerProps>`
   }
 
   ${({ typeButton }) =>
-    typeButton === 'primary' &&
+    typeButton === 'secondary' &&
     css`
       background: transparent;
       border-radius: 1.6rem;

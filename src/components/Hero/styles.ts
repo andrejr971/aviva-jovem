@@ -2,15 +2,21 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  height: 100%;
+  height: 70rem;
+  margin-bottom: 23rem;
 
   background: url('assets/images/svg/lines.svg') top center no-repeat;
   background-size: 100% 100%;
+
+  @media screen and (max-width: 720px) {
+    & {
+      height: 62rem;
+      margin-bottom: 15rem;
+    }
+  }
 `;
 
 export const ThemeEvent = styled.div`
-  margin-top: 12rem;
-
   width: 100%;
   height: 100%;
 

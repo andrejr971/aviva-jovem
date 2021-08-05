@@ -7,7 +7,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export function Button({
-  typeButton = 'secondary',
+  typeButton = 'primary',
   children,
   ...rest
 }: ButtonProps) {

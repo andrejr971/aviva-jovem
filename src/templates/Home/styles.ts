@@ -4,7 +4,11 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
 
-  /* overflow: hidden; */
+  overflow-y: hidden;
+
+  article {
+    padding: 0.8rem;
+  }
 `;
 
 export const BackgroundHero = styled.div`
