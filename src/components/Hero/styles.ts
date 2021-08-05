@@ -9,7 +9,7 @@ export const Container = styled.div`
 `;
 
 export const ThemeEvent = styled.div`
-  margin-top: 16rem;
+  margin-top: 12rem;
 
   width: 100%;
   height: 100%;
@@ -22,6 +22,8 @@ export const ThemeEvent = styled.div`
   img {
     width: 15rem;
     height: 15rem;
+
+    margin-bottom: 2.4rem;
   }
 
   div {
@@ -78,6 +80,12 @@ export const ThemeEvent = styled.div`
     bottom: 0;
 
     transform: rotate(-15deg);
+
+    @media screen and (max-width: 750px) {
+      & {
+        font-size: 2.4rem;
+      }
+    }
   }
 `;
 

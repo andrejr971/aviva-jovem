@@ -25,10 +25,6 @@ export const Container = styled.header`
       max-width: 25rem;
     }
 
-    img.logo {
-      display: none;
-    }
-
     nav.navbar {
       display: flex;
       justify-content: flex-end;
@@ -71,6 +67,10 @@ export const Container = styled.header`
       }
     }
 
+    button {
+      max-width: 26rem;
+    }
+
     @media screen and (max-width: 800px) {
       & {
         padding: 0.8rem;
@@ -81,6 +81,10 @@ export const Container = styled.header`
       }
 
       img.logotipo {
+        max-width: 15rem;
+      }
+
+      /* img.logotipo {
         display: none;
       }
 
@@ -88,41 +92,7 @@ export const Container = styled.header`
         display: block;
         width: 100%;
         max-width: 4.8rem;
-      }
-
-      button.btn-menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        width: 4.8rem;
-        height: 4.8rem;
-        background: none;
-        border: 0;
-
-        &:hover {
-          span:last-child {
-            width: 100%;
-          }
-        }
-
-        span {
-          display: block;
-          width: 100%;
-          height: 0.3rem;
-
-          background: var(--gradient_orange);
-
-          & + span {
-            margin-top: 0.8rem;
-          }
-
-          &:last-child {
-            width: 50%;
-            transition: width 0.2s ease;
-          }
-        }
-      }
+      } */
     }
   }
 `;
