@@ -3,6 +3,7 @@
 import { About } from '../../components/About';
 import { Hero } from '../../components/Hero';
 import { Information } from '../../components/Information';
+import { Lecturer } from '../../components/Lecturer';
 import { Container } from './styles';
 
 export function Home() {
@@ -15,6 +16,8 @@ export function Home() {
       </article>
 
       <About />
+
+      <Lecturer />
     </Container>
   );
 }

@@ -25,4 +25,12 @@ export const Container = styled.div`
     background: var(--gradient_orange);
     border-radius: 0.2rem;
   }
+
+  @media screen and (max-width: 1400px) {
+    margin-left: 1.6rem;
+  }
+
+  @media screen and (max-width: 720px) {
+    width: 80%;
+  }
 `;
