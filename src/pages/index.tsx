@@ -1,4 +1,4 @@
-import { GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import { IndexProps } from '../dtos/IBoardsDTO';
 import { api } from '../services/api';
@@ -15,7 +15,7 @@ export default function Index({ boards }: IndexProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const { data } = await api.get('board');
 
   const boards: IndexProps = data;
