@@ -44,7 +44,6 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <link rel="stylesheet" href="styles/styles.css" />
           <link
             rel="shortcut icon"
             href="assets/images/favicon.png"
