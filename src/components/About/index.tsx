@@ -36,7 +36,7 @@ export function About() {
 
           <footer>
             <button type="button">
-              Pastor regional: Valdeonor Soares, Cordenador: Pastor Josuel
+              Pastor regional: Valdeonor Soares, Coordenador: Pastor Josuel
               Cardoso...
             </button>
           </footer>
