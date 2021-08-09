@@ -44,6 +44,27 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
+          <meta
+            name="description"
+            content="O Aviva Jovem é um projeto que iniciou-se em 2018, na direção do
+              Pastor Josuel. Já foram 4 edições do Aviva Jovem, com o objetivo
+              de impactar cada vez mais nossa geração 🔥"
+          />
+          <meta name="image" content="assets/images/AvivaJovem.png" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Aviva Jovem #5" />
+          <meta name="theme-color" content="#121210" />
+          <meta name="google" content="notranslate" />
+          <meta property="og:url" content="https://avivajovemadf.com" />
+          <meta property="og:image" content="assets/images/AvivaJovem.png" />
+          <meta
+            property="og:image:secure_url"
+            content="assets/images/AvivaJovem.png"
+          />
+          <meta property="og:image:alt" content="Aviva Jovem" />
+          <meta property="og:image:type" content="image/png" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
           <link
             rel="shortcut icon"
             href="assets/images/favicon.png"

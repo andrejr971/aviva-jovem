@@ -1,9 +1,12 @@
 import { FiShare2 } from 'react-icons/fi';
+import { useAction } from '../../hooks/actions';
 import { Button } from '../Button';
 
 import { Container } from './styles';
 
 export function Header() {
+  const { handleShare } = useAction();
+
   return (
     <Container className="navbar-container">
       <div>
@@ -13,7 +16,7 @@ export function Header() {
           className="logotipo"
         />
 
-        <Button type="button">
+        <Button type="button" onClick={handleShare}>
           <FiShare2 />
           <span>Compartilhe</span>
         </Button>
