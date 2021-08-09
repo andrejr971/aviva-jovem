@@ -1,8 +1,11 @@
 import { FiCalendar, FiMapPin, FiShare2 } from 'react-icons/fi';
+import { useAction } from '../../hooks/actions';
 import { Button } from '../Button';
 import { Card, Container, GroupButton } from './styles';
 
 export function Information() {
+  const { handleShare, handleShareLocation } = useAction();
+
   return (
     <Container>
       <Card>
@@ -22,12 +25,12 @@ export function Information() {
       </Card>
 
       <GroupButton>
-        <Button type="button" typeButton="secondary">
+        <Button type="button" typeButton="secondary" onClick={handleShare}>
           <FiShare2 />
           <span>Compartilhar</span>
         </Button>
 
-        <Button type="button">
+        <Button type="button" onClick={handleShareLocation}>
           <FiMapPin />
           <span>Como chegar</span>
         </Button>

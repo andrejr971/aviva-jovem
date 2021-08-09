@@ -45,7 +45,7 @@ export const ImageLecturer = styled.div`
     height: 32rem;
     border-radius: 3.2rem;
 
-    box-shadow: var(--shadow_orange);
+    box-shadow: var(--shadow_dark);
 
     &.confirm-lecturer {
       width: 20rem;

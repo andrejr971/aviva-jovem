@@ -1,8 +1,11 @@
 import { FiCalendar, FiMapPin, FiShare2 } from 'react-icons/fi';
+import { useAction } from '../../hooks/actions';
 import { Button } from '../Button';
 import { Container, ContentInformations, ContentInvite, Info } from './styles';
 
 export function Invite() {
+  const { handleShare, handleShareLocation } = useAction();
+
   return (
     <Container>
       <ContentInformations>
@@ -29,12 +32,12 @@ export function Invite() {
         </Info>
 
         <div className="info-buttons">
-          <Button type="button" typeButton="secondary">
+          <Button type="button" typeButton="secondary" onClick={handleShare}>
             <FiShare2 />
             <span>Compartilhar</span>
           </Button>
 
-          <Button type="button">
+          <Button type="button" onClick={handleShareLocation}>
             <FiMapPin />
 
             <span>Como chegar</span>
