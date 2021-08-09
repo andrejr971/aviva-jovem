@@ -22,15 +22,7 @@ export function ActionProvider({ children }: ActionProviderProps) {
       url = 'https://api.whatsapp.com';
     }
 
-    if (navigator.share) {
-      await navigator.share({
-        title: 'Convite especial',
-        text: encodeURIComponent(message),
-        url: window.location.href,
-      });
-    } else {
-      window.location.href = `${url}?text=${encodeURIComponent(message)}`;
-    }
+    window.location.href = `${url}?text=${encodeURIComponent(message)}`;
   }
 
   async function handleShareLocation() {
