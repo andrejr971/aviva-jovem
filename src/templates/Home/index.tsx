@@ -18,7 +18,7 @@ export function Home({ boards }: IndexProps) {
         <title>Aviva Jovem #5 - ADF</title>
       </Head>
 
-      <Loading />
+      {/* <Loading /> */}
 
       <Hero />
 
