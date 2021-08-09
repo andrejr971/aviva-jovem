@@ -8,6 +8,7 @@ export const Container = styled.section`
   width: 100%;
   max-width: 1416px;
   margin: 0 auto;
+  margin-top: -4.8rem;
   background: var(--gradient_white);
   border-radius: 2.4rem;
 
@@ -19,6 +20,8 @@ export const Container = styled.section`
     & {
       display: flex;
       flex-direction: column;
+
+      margin-top: -1.6rem;
     }
   }
 `;

@@ -61,10 +61,11 @@ export default class MyDocument extends Document {
             property="og:image:secure_url"
             content="assets/images/AvivaJovem.png"
           />
-          <meta property="og:image:alt" content="Aviva Jovem" />
+          <meta property="og:image:alt" content="Aviva Jovem Adf" />
           <meta property="og:image:type" content="image/png" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
+
           <link
             rel="shortcut icon"
             href="assets/images/favicon.png"
