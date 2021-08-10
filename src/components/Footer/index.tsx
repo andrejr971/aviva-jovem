@@ -67,7 +67,7 @@ export function Footer() {
         <p>@2019-2021 - Aviva Jovem - Todos os direitos reservados</p>
         <p>
           Desenvolvido por:{' '}
-          <a href="andrejr.dev" target="blank">
+          <a href="https://andrejr.dev" target="blank">
             André Junior
           </a>
         </p>
