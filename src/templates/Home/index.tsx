@@ -3,6 +3,8 @@
 import Head from 'next/head';
 import { About } from '../../components/About';
 import { Board } from '../../components/Board';
+import { Footer } from '../../components/Footer';
+import { Gallery } from '../../components/Gallery';
 import { Hero } from '../../components/Hero';
 import { Information } from '../../components/Information';
 import { Invite } from '../../components/Inivite';
@@ -32,6 +34,9 @@ export function Home({ boards }: IndexProps) {
 
       <Lecturer />
       <Invite />
+      <Gallery />
+
+      <Footer />
     </Container>
   );
 }

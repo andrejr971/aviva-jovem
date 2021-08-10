@@ -28,16 +28,21 @@ export function Invite() {
             <FiMapPin />
           </div>
 
-          <p>Rua Nova Esperança, 64 - Jd. São Juda</p>
+          <p>Rua Nova Esperança, 64 - Jd. São Judas</p>
         </Info>
 
         <div className="info-buttons">
-          <Button type="button" typeButton="secondary" onClick={handleShare}>
+          <Button
+            type="button"
+            typeButton="secondary"
+            onClick={handleShare}
+            display="true"
+          >
             <FiShare2 />
             <span>Compartilhar</span>
           </Button>
 
-          <Button type="button" onClick={handleShareLocation}>
+          <Button type="button" onClick={handleShareLocation} display="true">
             <FiMapPin />
 
             <span>Como chegar</span>

@@ -33,7 +33,7 @@ export const Container = styled.section`
         margin-top: 2.4rem;
       }
     }
-
+    /*
     .info-buttons {
       display: flex;
       align-items: center;
@@ -50,7 +50,7 @@ export const Container = styled.section`
           color: var(--white_light);
         }
       }
-    }
+    } */
 
     .background-img {
       width: 100%;
@@ -107,6 +107,22 @@ export const ContentInformations = styled.div`
 
       & + button {
         margin-left: 2.4rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .info-buttons {
+      width: 100%;
+      flex-direction: column;
+
+      button {
+        max-width: 100%;
+
+        & + button {
+          margin-left: 0;
+          margin-top: 1.6rem;
+        }
       }
     }
   }

@@ -1,29 +1,8 @@
 import styled from 'styled-components';
 
-export const Container = styled.section`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.4rem;
-
+export const Container = styled.footer`
   width: 100%;
-  max-width: 1416px;
-  margin: 0 auto;
-  margin-top: -4.8rem;
-  background: var(--gradient_white);
-  border-radius: 2.4rem;
-
-  box-shadow: var(--shadow_black);
-
-  padding: 4rem;
-
-  @media screen and (max-width: 860px) {
-    & {
-      display: flex;
-      flex-direction: column;
-
-      margin-top: -1.6rem;
-    }
-  }
+  margin-top: 27.2rem;
 `;
 
 export const Card = styled.div`
@@ -81,6 +60,10 @@ export const Card = styled.div`
       }
     }
   }
+
+  & + div {
+    margin-top: 2.4rem;
+  }
 `;
 
 export const GroupButton = styled.div`
@@ -111,6 +94,56 @@ export const GroupButton = styled.div`
         margin-left: 0;
         margin-top: 1.6rem;
       }
+    }
+  }
+`;
+
+export const Content = styled.div`
+  width: 100%;
+
+  background: var(--gradient_white);
+
+  padding: 4.8rem 0.8rem;
+`;
+
+export const ContentFooter = styled.div`
+  width: 100%;
+  max-width: 1416px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column-reverse;
+  }
+
+  > img {
+    @media screen and (max-width: 1200px) {
+      margin-top: 2.4rem;
+    }
+  }
+`;
+
+export const DivThanks = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2.4rem 0.8rem;
+
+  p {
+    font: var(--text_2);
+    text-align: center;
+
+    & + p {
+      margin-top: 0.8rem;
+    }
+
+    a {
+      color: var(--orange);
     }
   }
 `;

@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 interface ContainerProps {
   typeButton: 'primary' | 'secondary';
+  display?: string;
 }
 
 export const Container = styled.button<ContainerProps>`
@@ -51,17 +52,21 @@ export const Container = styled.button<ContainerProps>`
     `}
 
   @media screen and (max-width: 800px) {
-    & {
-      width: 5.6rem;
-      padding: 0;
-    }
+    ${({ display }) =>
+      !display &&
+      css`
+        & {
+          padding: 0;
+          width: 5.6rem;
+        }
 
-    svg {
-      margin: 0;
-    }
+        span {
+          display: none;
+        }
 
-    span {
-      display: none;
-    }
+        svg {
+          margin: 0;
+        }
+      `}
   }
 `;
