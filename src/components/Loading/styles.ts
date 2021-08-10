@@ -14,7 +14,7 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  background: var(--gradient_black);
+  background: var(--black_dark);
 
   @keyframes animation {
     0% {
@@ -169,6 +169,13 @@ export const Description = styled.p`
   padding: 0.8rem;
 
   animation: text 4s ease forwards;
+
+  span {
+    background: var(--gradient_orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 `;
 
 export const TextInvite = styled.p`

@@ -92,6 +92,19 @@ export const CardLeaders = styled.div`
         opacity: 0.7;
       }
 
+      button {
+        background: transparent;
+        border: 0;
+        font: var(--link);
+        color: var(--white_ligth);
+        opacity: 0.8;
+        text-decoration: underline;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
       & + li {
         margin-top: 0.8rem;
       }

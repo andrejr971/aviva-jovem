@@ -37,7 +37,7 @@ export function Faq() {
           </header>
           <CardBody className={selected === 0 ? 'active' : ''}>
             <p>
-              A Edição #5 do Aviva Jovem de Vargem Grande PauCardsta, vai
+              A Edição #5 do Aviva Jovem de Vargem Grande Paulista, vai
               acontecer!
             </p>
           </CardBody>
@@ -79,7 +79,7 @@ export function Faq() {
             </button>
           </header>
           <CardBody className={selected === 2 ? 'active' : ''}>
-            <p>Será reaCardzado no dia 18 de Setembro de 2021.</p>
+            <p>Será realizado no dia 18 de Setembro de 2021.</p>
           </CardBody>
         </Card>
         <Card>
@@ -100,7 +100,7 @@ export function Faq() {
           </header>
           <CardBody className={selected === 3 ? 'active' : ''}>
             <p>
-              Será reaCardzado no Templo Sede Regional da Assembleia de Deus -
+              Será realizado no Templo Sede Regional da Assembleia de Deus -
               min. do Ferreira de Vargem Grande. Rua Nova Esperança, 64 - Jd.
               São Judas - Vargem Grande PauCardsta.
             </p>

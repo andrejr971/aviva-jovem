@@ -5,7 +5,11 @@ export function Loading() {
   return (
     <Container>
       <Logo />
-      <Description>Aviva Jovem #5</Description>
+      <Description>
+        Aviva Jovem
+        <br />
+        <span>Voltou!!</span>
+      </Description>
 
       <TextInvite>
         Você é o nosso <span>convidado!!</span>

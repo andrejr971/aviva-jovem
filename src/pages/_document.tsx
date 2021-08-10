@@ -73,6 +73,8 @@ export default class MyDocument extends Document {
           />
         </Head>
         <body>
+          <div id="root"></div>
+
           <Main />
           <NextScript />
         </body>

@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import { IndexProps } from '../../dtos/IBoardsDTO';
+import { Modal } from '../Modal';
 import { Title } from '../Title';
 
 import {
@@ -18,6 +19,7 @@ export function Board({ boards }: IndexProps) {
   const [isAvailablePrevious, setIsAvailablePrevious] = useState(false);
   const [isAvailableNext, setIsAvailableNext] = useState(false);
   const [index, setIndex] = useState(0);
+  const [isOpenModal, setIsOpenModal] = useState(false);
 
   useEffect(() => {
     if (index === 0) {
@@ -105,11 +107,20 @@ export function Board({ boards }: IndexProps) {
             <div>
               <h5>Músicos:</h5>
               <ul>
-                {boards.outhers.musicians.map(musician => (
-                  <li key={musician.id}>
-                    <strong>{musician.name}</strong>
-                  </li>
-                ))}
+                <li>
+                  <strong>Lucas Henrique</strong>
+                </li>
+                <li>
+                  <strong>André Matheus</strong>
+                </li>
+                <li>
+                  <strong>Oseas Santana</strong>
+                </li>
+                <li>
+                  <button type="button" onClick={() => setIsOpenModal(true)}>
+                    Ver mais
+                  </button>
+                </li>
               </ul>
             </div>
             <div>
@@ -126,6 +137,19 @@ export function Board({ boards }: IndexProps) {
           </CardLeaders>
         </ContentBoard>
       </Content>
+
+      <Modal isOpen={isOpenModal} onCloseModal={() => setIsOpenModal(false)}>
+        <CardLeaders>
+          <h5>Músicos:</h5>
+          <ul>
+            {boards.outhers.musicians.map(musician => (
+              <li key={musician.id}>
+                <strong>{musician.name}</strong>
+              </li>
+            ))}
+          </ul>
+        </CardLeaders>
+      </Modal>
     </Container>
   );
 }
