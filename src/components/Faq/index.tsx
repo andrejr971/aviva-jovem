@@ -102,7 +102,7 @@ export function Faq() {
             <p>
               Será realizado no Templo Sede Regional da Assembleia de Deus -
               min. do Ferreira de Vargem Grande. Rua Nova Esperança, 64 - Jd.
-              São Judas - Vargem Grande PauCardsta.
+              São Judas - Vargem Grande Paulista.
             </p>
             <Button type="button" display="true" onClick={handleShareLocation}>
               <FiMapPin />
