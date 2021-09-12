@@ -20,7 +20,7 @@ export function Invite() {
             <FiCalendar />
           </div>
 
-          <p>18 de Setembro de 2021, às 19h30</p>
+          <p>18 de Setembro de 2021, às 19h00</p>
         </Info>
 
         <Info>
