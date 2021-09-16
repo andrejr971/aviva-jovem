@@ -67,7 +67,7 @@ export function Board({ boards }: IndexProps) {
       <Content>
         <Title>
           <h2>
-            Diretória do
+            Diretoria do
             <span>Aviva Jovem</span>
           </h2>
         </Title>
