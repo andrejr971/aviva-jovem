@@ -7,7 +7,7 @@
 <h4 align="center">
   <p>Site Aviva Jovem.</p>
 
-  <p>O Blog é um projeto desenvolvido em ReactJS para o curso FrontPush.</p>
+  <p>Neste projeto fiz uma landing page para divulgar o projeto regional da minha igreja que irá voltar.</p>
 </h4>
 
 <p align="center">
