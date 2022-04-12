@@ -141,22 +141,22 @@ export default function handler(
         {
           id: 1,
           name: 'André Junior',
-          office: 'Media',
+          office: 'Mídia',
         },
         {
           id: 2,
           name: 'Daniela Araújo',
-          office: 'Media',
+          office: 'Mídia',
         },
         {
           id: 3,
           name: 'Nycolly Cristiny',
-          office: 'Media',
+          office: 'Mídia',
         },
         {
           id: 4,
-          name: 'Natã Domingues',
-          office: 'Media',
+          name: 'Natã Oliveira',
+          office: 'Mídia',
         },
         {
           id: 5,
