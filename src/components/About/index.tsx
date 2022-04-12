@@ -24,7 +24,7 @@ export function About() {
       <Content>
         <h3>Aviva Jovem</h3>
         <p>
-          O Aviva Jovem é um projeto que iniciou-se em 2018, na direção do
+          O Aviva Jovem é um projeto que iniciou-se em 2017, na direção do
           Pastor Josuel. Já foram 5 edições do Aviva Jovem, com o objetivo de
           impactar cada vez mais nossa geração 🔥{' '}
           <strong> SE PREPARE PARA A VOLTA DA 6° EDIÇÃO!</strong> <br />
