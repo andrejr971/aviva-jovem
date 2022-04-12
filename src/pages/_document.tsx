@@ -53,7 +53,7 @@ export default class MyDocument extends Document {
 
           <meta
             name="description"
-            content="O Aviva Jovem é um projeto que iniciou-se em 2019, na direção do Pastor Josuel.
+            content="O Aviva Jovem é um projeto que iniciou-se em 2018, na direção do Pastor Josuel.
           Já foram 5 edições do Aviva Jovem, com o objetivo de impactar cada vez mais nossa geração 🔥"
           />
           <meta name="image" content="/assets/images/banner.png" />
