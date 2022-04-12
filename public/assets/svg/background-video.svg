@@ -1,0 +1,16 @@
+<svg width="640" height="447" viewBox="0 0 640 447" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="background-video">
+<rect id="Rectangle 8" class="rec_1" x="1.19209e-07" y="-2" width="441.312" height="281.456" rx="30" transform="matrix(-0.866025 -0.5 0.866025 -0.5 387.383 362.384)" stroke="url(#paint0_linear_858_23)" stroke-width="4"/>
+<rect id="Rectangle 7" class="rec_2" x="-1.19209e-07" y="2" width="441.312" height="281.456" rx="30" transform="matrix(0.866025 0.5 -0.866025 0.5 256.081 81.6414)" stroke="url(#paint1_linear_858_23)" stroke-width="4"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_858_23" x1="445.312" y1="-1.70145e-05" x2="185.927" y2="404.64" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D1CFCB" stop-opacity="0"/>
+<stop offset="1" stop-color="#FDF9F7"/>
+</linearGradient>
+<linearGradient id="paint1_linear_858_23" x1="445.312" y1="-1.70145e-05" x2="185.927" y2="404.64" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D1CFCB" stop-opacity="0"/>
+<stop offset="1" stop-color="#FDF9F7"/>
+</linearGradient>
+</defs>
+</svg>
