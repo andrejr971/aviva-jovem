@@ -17,9 +17,18 @@ import {
   InfoTheme,
   ThemeEvent,
 } from './styles';
+import { useAction } from '../../hooks/actions';
+import { ModalShareLocation } from '../ModalShareLocation';
 
 export function Hero() {
   const [diffDays, setDiffDays] = useState('');
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const { handleShare } = useAction();
+
+  function handleOpenModal() {
+    setIsOpenModal(!isOpenModal);
+  }
 
   useEffect(() => {
     const date1 = new Date();
@@ -56,8 +65,13 @@ export function Hero() {
           </ThemeEvent>
 
           <GroupButton>
-            <Button title="Compartilhar" />
-            <Button title="Como chegar" typeButton="secondary" colorWhite />
+            <Button title="Compartilhar" onClick={handleShare} />
+            <Button
+              title="Como chegar"
+              typeButton="secondary"
+              colorWhite
+              onClick={handleOpenModal}
+            />
           </GroupButton>
         </InfoTheme>
 
@@ -113,6 +127,8 @@ export function Hero() {
           </ContentInformationDates>
         </InformationDates>
       </Content>
+
+      <ModalShareLocation isOpen={isOpenModal} onCloseModal={handleOpenModal} />
     </Container>
   );
 }

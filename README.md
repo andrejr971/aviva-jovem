@@ -1,60 +1,72 @@
 
-# What is inside?
+<h1 align="center">
+    <img alt="Logo" src="./public/assets/svg/aviva_jovem2.svg" />
+    <br>
+</h1>
 
-This project uses lot of stuff as:
+<h4 align="center">
+  <p>Site Aviva Jovem.</p>
+
+  <p>O Blog é um projeto desenvolvido em ReactJS para o curso FrontPush.</p>
+</h4>
+
+<p align="center">
+  <a href="https://andrejr.dev">
+    <img alt="Feito por André Junior" src="https://img.shields.io/badge/feito%20por-André Junior-blue">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-como-instalar">Como instalar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#comandos">Comandos</a>&nbsp;&nbsp;&nbsp;
+</p>
+
+<p align="center">
+  <img alt="Scene" src="./public/assets/images/github.jpeg">
+</p>
+
+## :rocket: Tecnologias
+
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [NextJS](https://nextjs.org/)
 - [Styled Components](https://styled-components.com/)
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky)
+- [React Slick](https://react-slick.neostack.com/)
+- [React Modal](https://github.com/reactjs/react-modal)
 
 
-## Clonning project
-```bach
-yarn create next-app -e https://github.com/andrejr971/boilerplate <name-project>
-```
 
-## Getting Started
+## :information_source: Como instalar
 
-First, run the development server:
+Para clonar e executar este aplicativo, você precisará do [Git](https://git-scm.com) instalado em seu computador. Da sua linha de comando:
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clonar este repositório
+$ git clone https://github.com/andrejr971/aviva2.0.git
+
+# Navegue até o repositório
+$ cd aviva2.0
+
+#instale os pacotes
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run start
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:300
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Commands
+## Comandos
 
 - `dev`: runs your application on `localhost:3000`
 - `build`: creates the production build version
 - `start`: starts a simple server with the build production code
 - `lint`: runs the linter in all components and pages
-- `test`: runs jest to test all components and pages
-- `test:watch`: runs jest in watch mode
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feito by André Junior :wave: [portifólio](https://andrejr.dev)

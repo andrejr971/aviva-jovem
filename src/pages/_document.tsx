@@ -62,17 +62,19 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content="#121210" />
           <meta name="google" content="notranslate" />
           <meta property="og:url" content="https://avivajovemadf.com" />
-          <meta property="og:image" content="/assets/images/AvivaJovem.png" />
+          <meta property="og:image" content="/assets/images/banner.jpeg" />
           <meta
             property="og:image:secure_url"
-            content="assets/images/AvivaJovem.png"
+            content="/assets/images/banner.jpeg"
           />
           <meta property="og:image:alt" content="Aviva Jovem Adf" />
-          <meta property="og:image:type" content="image/png" />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="630" />
+          <meta property="og:image:type" content="image/jpeg" />
+          <meta property="og:image:width" content="1080" />
+          <meta property="og:image:height" content="1920" />
         </Head>
         <body>
+          <div id="root"></div>
+
           <Main />
           <NextScript />
         </body>

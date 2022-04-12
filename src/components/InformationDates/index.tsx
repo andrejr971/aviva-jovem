@@ -1,4 +1,7 @@
+import { useState } from 'react';
+import { useAction } from '../../hooks/actions';
 import { Button } from '../Button';
+import { ModalShareLocation } from '../ModalShareLocation';
 import {
   BorderLeftInfo,
   Container,
@@ -8,6 +11,14 @@ import {
 } from './styles';
 
 export function InformationDates() {
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const { handleShare } = useAction();
+
+  function handleOpenModal() {
+    setIsOpenModal(!isOpenModal);
+  }
+
   return (
     <Container>
       <Content>
@@ -51,9 +62,16 @@ export function InformationDates() {
       </Content>
 
       <GroupButton>
-        <Button title="Compartilhar" />
-        <Button title="Como chegar" typeButton="secondary" colorWhite />
+        <Button title="Compartilhar" onClick={handleShare} />
+        <Button
+          title="Como chegar"
+          typeButton="secondary"
+          colorWhite
+          onClick={handleOpenModal}
+        />
       </GroupButton>
+
+      <ModalShareLocation isOpen={isOpenModal} onCloseModal={handleOpenModal} />
     </Container>
   );
 }

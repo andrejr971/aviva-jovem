@@ -1,6 +1,8 @@
+import { useState } from 'react';
+import { useAction } from '../../hooks/actions';
 import { Button } from '../Button';
+import { ModalShareLocation } from '../ModalShareLocation';
 import {
-  BorderLeftInfo,
   Container,
   ContentInformationDates,
   DivLogos,
@@ -9,6 +11,14 @@ import {
 } from './styles';
 
 export function Footer() {
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const { handleShare } = useAction();
+
+  function handleOpenModal() {
+    setIsOpenModal(!isOpenModal);
+  }
+
   return (
     <Container>
       <div className="container">
@@ -48,8 +58,13 @@ export function Footer() {
 
         <div className="grid-8">
           <GroupButton>
-            <Button title="Compartilhar" />
-            <Button title="Como chegar" typeButton="secondary" colorWhite />
+            <Button title="Compartilhar" onClick={handleShare} />
+            <Button
+              title="Como chegar"
+              typeButton="secondary"
+              colorWhite
+              onClick={handleOpenModal}
+            />
           </GroupButton>
         </div>
       </div>
@@ -63,6 +78,8 @@ export function Footer() {
           </a>
         </p>
       </DivThanks>
+
+      <ModalShareLocation isOpen={isOpenModal} onCloseModal={handleOpenModal} />
     </Container>
   );
 }

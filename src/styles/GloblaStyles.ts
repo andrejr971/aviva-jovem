@@ -160,6 +160,72 @@ export default createGlobalStyle`
     }
   }
 
+  .react-modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+
+    z-index: 9999;
+
+    color: var(--white);
+  }
+
+  .react-modal-content {
+    width: 100%;
+    max-width: 720px;
+    background: var(--black);
+    padding: 3rem;
+    position: relative;
+    border-radius: 0.8rem;
+    padding: 3.2rem 2.4rem;
+  }
+
+  .react-modal-overlay-banner {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+
+    z-index: 9999;
+
+    color: var(--white);
+  }
+
+  .react-modal-content-banner {
+    max-width: 1080px;
+    background: var(--black);
+    padding: 3rem;
+    position: relative;
+    border-radius: 0.8rem;
+    padding: 3.2rem 2.4rem;
+  }
+
+  .react-modal-close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    background: transparent;
+    border: 0;
+    transition: filter .2s ease-in;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+
   @media screen and (max-width: 960px) {
     .container {
       -webkit-box-orient: vertical;

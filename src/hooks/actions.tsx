@@ -2,7 +2,8 @@ import { createContext, ReactNode, useContext } from 'react';
 
 interface IActionContextData {
   handleShare: () => Promise<void>;
-  handleShareLocation: () => Promise<void>;
+  handleShareLocationFirstDay: () => Promise<void>;
+  handleShareLocationSecondDay: () => Promise<void>;
 }
 
 interface ActionProviderProps {
@@ -35,15 +36,20 @@ export function ActionProvider({ children }: ActionProviderProps) {
     window.location.href = `${url}?text=${encodeURIComponent(message)}`;
   }
 
-  async function handleShareLocation() {
+  async function handleShareLocationFirstDay() {
     window.location.href = 'https://goo.gl/maps/3W9Zm5cFzvrVRKmR9';
+  }
+
+  async function handleShareLocationSecondDay() {
+    window.location.href = 'https://goo.gl/maps/dMRhyVTjJoGKhi5M8';
   }
 
   return (
     <ActionContextData.Provider
       value={{
         handleShare,
-        handleShareLocation,
+        handleShareLocationFirstDay,
+        handleShareLocationSecondDay,
       }}
     >
       {children}
