@@ -1,14 +1,18 @@
-import { AppProps } from 'next/app';
-import { AppProvider } from '../hooks';
-import GloblaStyles from '../styles/GloblaStyles';
+import type { AppProps } from 'next/app';
+import GlobalStyles from '@/styles/global';
+import { ThemeProvider } from 'styled-components';
+import { theme } from '@/styles/theme';
+import Head from 'next/head';
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
-    <AppProvider>
-      <GloblaStyles />
+    <ThemeProvider theme={theme}>
+      <Head>
+        <title>AVIVA JOVEM - 2023</title>
+      </Head>
+      <GlobalStyles />
+
       <Component {...pageProps} />
-    </AppProvider>
+    </ThemeProvider>
   );
 }
-
-export default MyApp;
