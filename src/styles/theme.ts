@@ -64,8 +64,15 @@ export const theme = {
       medium_r: "500 2rem/130% 'Saira', sans-serif",
       small_m: "600 1.8rem/130% 'Saira', sans-serif",
       small_r: "400 1.8rem/130% 'Saira', sans-serif",
+      xsmall_m: "500 1.6rem/130% 'Saira', sans-serif",
       xsmall: "400 1.6rem/130% 'Saira', sans-serif",
       xxsmall: "400 1.4rem/130% 'Saira', sans-serif",
+    },
+  },
+  effects: {
+    shadows: {
+      orange: `drop-shadow(0px 4px 40px rgba(223, 70, 24, 0.50))`,
+      dark: `drop-shadow(0px 0.4121871292591095px 3.331845760345459px rgba(36, 33, 32, 0.06)) drop-shadow(0px 1.042452096939087px 8.426487922668457px rgba(36, 33, 32, 0.08)) drop-shadow(0px 2.12650465965271px 17.189245223999023px rgba(36, 33, 32, 0.11)) drop-shadow(0px 4.380197525024414px 35.40659713745117px rgba(36, 33, 32, 0.13)) drop-shadow(0px 12px 97px rgba(36, 33, 32, 0.19))`,
     },
   },
 };
