@@ -202,6 +202,9 @@ export default createGlobalStyle`
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     html {
@@ -218,6 +221,21 @@ export default createGlobalStyle`
       background: ${theme.colors.background};
       color: ${theme.colors.white_light};
       font: ${theme.fonts.texts.medium_s};
+
+      overflow-x: hidden;
+
+      &::-webkit-scrollbar {
+        width: 0.8rem;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent !important;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: ${theme.colors.black};
+        border-radius: 8px;
+      }
     }
 
     button {

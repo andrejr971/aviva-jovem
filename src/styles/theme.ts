@@ -50,12 +50,12 @@ export const theme = {
   },
   fonts: {
     titles: {
-      xxlarge: "600 7.2rem/110% 'Saira', sans-serif",
-      xlarge: "600 4.8rem/110% 'Saira', sans-serif",
-      large: "600 3.2rem/110% 'Saira', sans-serif",
-      medium: "600 2.4rem/120% 'Saira', sans-serif",
-      small: "600 2rem/120% 'Saira', sans-serif",
-      xsmall: "600 1.8rem/120% 'Saira', sans-serif",
+      xxlarge: "500 7.2rem/110% 'Saira', sans-serif",
+      xlarge: "500 4.8rem/110% 'Saira', sans-serif",
+      large: "500 3.2rem/110% 'Saira', sans-serif",
+      medium: "500 2.4rem/120% 'Saira', sans-serif",
+      small: "500 2rem/120% 'Saira', sans-serif",
+      xsmall: "500 1.8rem/120% 'Saira', sans-serif",
     },
     texts: {
       xlarge: "400 3.2rem/130% 'Saira', sans-serif",

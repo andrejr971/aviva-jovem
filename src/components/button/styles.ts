@@ -41,6 +41,8 @@ const containerModifier = {
   `,
   medium: (theme: DefaultTheme) => css`
     height: 4.8rem;
+    width: 100%;
+    max-width: 26rem;
     padding: 1.6rem 3.2rem;
   `,
 };
@@ -55,8 +57,6 @@ export const Container = styled.button<ContainerProps>`
     display: flex;
     height: 48px;
     padding: 16px;
-    width: 100%;
-    max-width: 26rem;
     justify-content: space-between;
     align-items: center;
     gap: 16px;
