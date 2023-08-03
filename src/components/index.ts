@@ -7,3 +7,5 @@ export * from './hero';
 export * from './cards';
 export * from './about';
 export * from './boards';
+export * from './section-invite';
+export * from './section-lecturers';
