@@ -1,4 +1,3 @@
-import { CardWithImage } from './components';
 import { CountAlert } from '../count-alert';
 import {
   BackgroundVideo,
@@ -15,6 +14,7 @@ import {
 } from './styles';
 import { CaretDown, MapPin } from '@phosphor-icons/react';
 import MediaMatch from '../media-match';
+import { CardWithImage } from '../cards';
 
 export function Hero() {
   return (

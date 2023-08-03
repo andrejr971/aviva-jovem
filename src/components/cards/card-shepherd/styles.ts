@@ -4,8 +4,13 @@ export const Container = styled.figure`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
+    max-width: 45.6rem;
 
     align-items: center;
+
+    &:last-child {
+      padding-right: 2.4rem;
+    }
 
     img {
       width: 100%;
@@ -19,7 +24,7 @@ export const Container = styled.figure`
 
 export const Description = styled.figcaption`
   ${({ theme }) => css`
-    margin-top: -20rem;
+    margin-top: -10rem;
     padding: 1.6rem;
     width: 100%;
 
@@ -41,36 +46,17 @@ export const Description = styled.figcaption`
         rgba(36, 33, 32, 0.6) 100%
       );
       backdrop-filter: blur(20px);
-    }
-  `}
-`;
-
-export const Information = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    gap: 1.6rem;
-
-    text-align: center;
-    font: ${theme.fonts.texts.medium_s};
-    color: ${theme.colors.white_dark};
-
-    div {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
 
       strong {
-        font-size: 8rem;
-        font-weight: 500;
+        font: ${theme.fonts.titles.large};
+        font-weight: 400;
         color: ${theme.colors.white_light};
       }
 
       span {
-        max-width: 12rem;
-        text-align: left;
+        color: ${theme.colors.white_dark};
+        font: ${theme.fonts.texts.small_r};
+        text-align: center;
       }
     }
   `}

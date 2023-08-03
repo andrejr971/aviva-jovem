@@ -6,8 +6,6 @@ export const Container = styled.section`
   height: 100%;
 
   position: relative;
-
-  /* overflow: hidden; */
 `;
 
 export const Content = styled.div`
@@ -165,7 +163,7 @@ export const ContentCards = styled.div`
   `}
 
   ${media.lessThan('medium')`
-    grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
   `}
 
   ${media.greaterThan('large')`
