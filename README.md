@@ -1,4 +1,3 @@
-
 <h1 align="center">
     <img alt="Logo" src="./public/assets/svg/aviva_jovem2.svg" />
     <br>
@@ -37,8 +36,6 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - [Prettier](https://prettier.io/)
 - [React Slick](https://react-slick.neostack.com/)
 - [React Modal](https://github.com/reactjs/react-modal)
-
-
 
 ## :information_source: Como instalar
 
