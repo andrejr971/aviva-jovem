@@ -17,6 +17,7 @@ import { ModalShared } from '../modal-shared';
 import {
   handleShareLocationFirstDay,
   handleShareLocationSecondDay,
+  sharedWithWhasapp,
 } from '@/utils/links-shared-locations';
 
 export function Footer() {
@@ -65,18 +66,12 @@ export function Footer() {
           </DivInvite>
 
           <GroupButton>
-            <Modal
-              buttonTrigger={
-                <Button variant="secondary" size="full">
-                  Compartilhar
-                  <ButtonIcon>
-                    <ShareNetwork size={18} />
-                  </ButtonIcon>
-                </Button>
-              }
-            >
-              <ModalShared />
-            </Modal>
+            <Button variant="secondary" size="full" onClick={sharedWithWhasapp}>
+              Compartilhar
+              <ButtonIcon>
+                <ShareNetwork size={18} />
+              </ButtonIcon>
+            </Button>
           </GroupButton>
         </GroupInvite>
       </Content>

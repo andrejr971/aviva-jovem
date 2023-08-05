@@ -6,6 +6,7 @@ import MediaMatch from '../media-match';
 import { Modal } from '../modal';
 import { ModalShareLocation } from '../modal-share-location';
 import { ModalShared } from '../modal-shared';
+import { sharedWithWhasapp } from '@/utils/links-shared-locations';
 
 export function Header() {
   return (
@@ -21,18 +22,12 @@ export function Header() {
               <ModalShareLocation />
             </Modal>
 
-            <Modal
-              buttonTrigger={
-                <Button>
-                  Compartilhar
-                  <ButtonIcon>
-                    <ShareNetwork size={18} />
-                  </ButtonIcon>
-                </Button>
-              }
-            >
-              <ModalShared />
-            </Modal>
+            <Button onClick={sharedWithWhasapp}>
+              Compartilhar
+              <ButtonIcon>
+                <ShareNetwork size={18} />
+              </ButtonIcon>
+            </Button>
           </GroupButtons>
         </MediaMatch>
 
@@ -48,17 +43,15 @@ export function Header() {
               <ModalShareLocation />
             </Modal>
 
-            <Modal
-              buttonTrigger={
-                <Button size="small" variant="secondary">
-                  <ButtonIcon>
-                    <ShareNetwork size={18} />
-                  </ButtonIcon>
-                </Button>
-              }
+            <Button
+              size="small"
+              variant="secondary"
+              onClick={sharedWithWhasapp}
             >
-              <ModalShared />
-            </Modal>
+              <ButtonIcon>
+                <ShareNetwork size={18} />
+              </ButtonIcon>
+            </Button>
           </GroupButtons>
         </MediaMatch>
       </Content>
