@@ -51,6 +51,7 @@ export const Description = styled.figcaption`
         font: ${theme.fonts.titles.large};
         font-weight: 400;
         color: ${theme.colors.white_light};
+        text-align: center;
       }
 
       span {

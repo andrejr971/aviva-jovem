@@ -1,10 +1,13 @@
 import {
   About,
   Boards,
+  Footer,
   Header,
   Hero,
+  Modal,
   SectionInvite,
   SectionLecturers,
+  SectionReason,
 } from '@/components';
 import { Container } from './styles';
 import { HomeProps } from './types';
@@ -14,6 +17,7 @@ export function HomeTemplate({
   musicians,
   shepherds,
   volunteers,
+  lecturers,
 }: HomeProps) {
   return (
     <Container>
@@ -31,7 +35,11 @@ export function HomeTemplate({
 
       <SectionInvite />
 
-      <SectionLecturers />
+      <SectionLecturers lecturers={lecturers} />
+
+      <SectionReason />
+
+      <Footer />
     </Container>
   );
 }

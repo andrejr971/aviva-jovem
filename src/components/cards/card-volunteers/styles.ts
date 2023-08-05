@@ -21,6 +21,7 @@ export const Container = styled.div`
       rgba(36, 33, 32, 0.6) 100%
     );
     backdrop-filter: blur(20px);
+    text-align: center;
 
     strong {
       font: ${theme.fonts.titles.large};

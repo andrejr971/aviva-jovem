@@ -9,8 +9,12 @@ export const Container = styled.figure`
   width: 100%;
 `;
 
-export const Description = styled.figcaption`
-  ${({ theme }) => css`
+interface DescriptionProps {
+  variant: 'primary' | 'secondary';
+}
+
+export const Description = styled.figcaption<DescriptionProps>`
+  ${({ theme, variant }) => css`
     display: flex;
     flex-direction: column;
 
@@ -19,14 +23,17 @@ export const Description = styled.figcaption`
     align-items: center;
     gap: 1.6rem;
 
-    border: 1px solid ${theme.colors.black_light};
+    border: 1px solid
+      ${variant === 'primary' ? theme.colors.black_light : 'transparent'};
 
     border-radius: 4px;
-    background: linear-gradient(
+    background: ${variant === 'primary'
+      ? ` linear-gradient(
       136deg,
       rgba(36, 33, 32, 0.8) 0%,
       rgba(36, 33, 32, 0.6) 100%
-    );
+    )`
+      : 'transparent'};
     backdrop-filter: blur(20px);
   `}
 `;

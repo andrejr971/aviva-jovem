@@ -8,10 +8,11 @@ export function Card({
   date,
   header,
   monthAndYear,
+  variant = 'primary',
 }: CardProps) {
   return (
     <Container>
-      <Description>
+      <Description variant={variant}>
         <Information>
           <p>{header}</p>
 

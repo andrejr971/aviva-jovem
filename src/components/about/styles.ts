@@ -29,6 +29,8 @@ export const Container = styled.main`
       border-radius: 0.4rem;
       top: -8rem;
 
+      z-index: -1;
+
       ${media.greaterThan('medium')`
         height: 100%;
       `}
