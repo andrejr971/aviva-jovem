@@ -15,6 +15,10 @@ import {
 import { CaretDown, MapPin } from '@phosphor-icons/react';
 import MediaMatch from '../media-match';
 import { CardWithImage } from '../cards';
+import {
+  handleShareLocationFirstDay,
+  handleShareLocationSecondDay,
+} from '@/utils/links-shared-locations';
 
 export function Hero() {
   return (
@@ -45,7 +49,7 @@ export function Hero() {
                     Como chegar <MapPin size={24} />
                   </>
                 ),
-                onClick: () => console.log('clicou'),
+                onClick: handleShareLocationFirstDay,
               },
               date: '09',
               header: 'Sábado às 18h30',
@@ -75,7 +79,7 @@ export function Hero() {
                     Como chegar <MapPin size={24} />
                   </>
                 ),
-                onClick: () => console.log('clicou'),
+                onClick: handleShareLocationSecondDay,
               },
               date: '10',
               header: 'Domingo às 08h30',

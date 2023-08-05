@@ -1,15 +1,18 @@
-import { Container } from './styles';
+import { Container, Content, Card } from './styles';
+import { SectionLecturersProps } from './types';
 
-export function SectionLecturers() {
+export function SectionLecturers({ lecturers }: SectionLecturersProps) {
   return (
     <Container>
       <h3>
         <span>Preletores</span>&<span>Cantores</span>
       </h3>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
-      reprehenderit ratione dolor et perferendis numquam at temporibus quo
-      voluptas rerum doloremque, amet rem beatae adipisci aperiam voluptatem
-      inventore corporis atque.
+
+      <Content>
+        {lecturers.map(lecturer => (
+          <Card key={lecturer.id} data={lecturer} />
+        ))}
+      </Content>
     </Container>
   );
 }

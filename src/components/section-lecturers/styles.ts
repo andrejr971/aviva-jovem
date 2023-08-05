@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { CardShepherd } from '../cards';
 
 export const Container = styled.section`
   ${({ theme }) => css`
@@ -25,4 +26,18 @@ export const Container = styled.section`
       }
     }
   `}
+`;
+
+export const Content = styled.div`
+  display: flex;
+  gap: 2.4rem;
+  margin-top: 5.6rem;
+
+  flex-wrap: wrap;
+`;
+
+export const Card = styled(CardShepherd)`
+  &:last-child {
+    padding-right: 0;
+  }
 `;

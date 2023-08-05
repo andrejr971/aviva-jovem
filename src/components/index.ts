@@ -9,3 +9,6 @@ export * from './about';
 export * from './boards';
 export * from './section-invite';
 export * from './section-lecturers';
+export * from './section-reason';
+export * from './footer';
+export * from './modal';

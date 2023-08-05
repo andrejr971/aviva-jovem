@@ -1,6 +1,5 @@
 import { useKeenSlider } from 'keen-slider/react';
 import { CaretLeft, CaretRight } from '@phosphor-icons/react';
-import { v4 as uuid } from 'uuid';
 
 import { Container, ContentSlider, Button, GroupButtons } from './styles';
 import { BoardsProps } from './types';
@@ -57,7 +56,7 @@ export function Boards({
       <ContentSlider ref={sliderRef} className="keen-slider">
         {shepherds.map(shepherd => (
           <CardShepherd
-            key={uuid()}
+            key={shepherd.id}
             data={shepherd}
             className="keen-slider__slide"
           />

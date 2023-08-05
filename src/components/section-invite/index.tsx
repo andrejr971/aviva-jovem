@@ -3,6 +3,12 @@ import { Container, Content, GroupButton, GroupCard, Info } from './styles';
 import { Card } from '../cards';
 import { MapPin, ShareNetwork } from '@phosphor-icons/react';
 import { Button, ButtonIcon } from '../button';
+import {
+  handleShareLocationFirstDay,
+  handleShareLocationSecondDay,
+} from '@/utils/links-shared-locations';
+import { Modal } from '../modal';
+import { ModalShared } from '../modal-shared';
 
 export function SectionInvite() {
   return (
@@ -31,7 +37,7 @@ export function SectionInvite() {
                   Como chegar <MapPin size={24} />
                 </>
               ),
-              onClick: () => console.log('clicou'),
+              onClick: handleShareLocationFirstDay,
             }}
             date="09"
             header="Sábado às 18h30"
@@ -45,7 +51,7 @@ export function SectionInvite() {
                   Como chegar <MapPin size={24} />
                 </>
               ),
-              onClick: () => console.log('clicou'),
+              onClick: handleShareLocationSecondDay,
             }}
             date="10"
             header="Domingo às 08h30"
@@ -54,12 +60,18 @@ export function SectionInvite() {
         </GroupCard>
 
         <GroupButton>
-          <Button variant="secondary" size="full">
-            Compartilhar
-            <ButtonIcon>
-              <ShareNetwork size={18} />
-            </ButtonIcon>
-          </Button>
+          <Modal
+            buttonTrigger={
+              <Button variant="secondary" size="full">
+                Compartilhar
+                <ButtonIcon>
+                  <ShareNetwork size={18} />
+                </ButtonIcon>
+              </Button>
+            }
+          >
+            <ModalShared />
+          </Modal>
         </GroupButton>
       </Content>
     </Container>
