@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { CardShepherd } from '../cards';
+import media from 'styled-media-query';
 
 export const Container = styled.section`
   ${({ theme }) => css`
@@ -29,14 +30,20 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
   gap: 2.4rem;
-  margin-top: 5.6rem;
 
-  flex-wrap: wrap;
+  margin-top: 4rem;
+
+  ${media.lessThan('medium')`
+    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+  `}
 `;
 
 export const Card = styled(CardShepherd)`
+  max-width: 100%;
+
   &:last-child {
     padding-right: 0;
   }

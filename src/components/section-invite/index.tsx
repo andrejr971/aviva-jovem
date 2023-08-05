@@ -6,6 +6,7 @@ import { Button, ButtonIcon } from '../button';
 import {
   handleShareLocationFirstDay,
   handleShareLocationSecondDay,
+  sharedWithWhasapp,
 } from '@/utils/links-shared-locations';
 import { Modal } from '../modal';
 import { ModalShared } from '../modal-shared';
@@ -60,18 +61,12 @@ export function SectionInvite() {
         </GroupCard>
 
         <GroupButton>
-          <Modal
-            buttonTrigger={
-              <Button variant="secondary" size="full">
-                Compartilhar
-                <ButtonIcon>
-                  <ShareNetwork size={18} />
-                </ButtonIcon>
-              </Button>
-            }
-          >
-            <ModalShared />
-          </Modal>
+          <Button variant="secondary" size="full" onClick={sharedWithWhasapp}>
+            Compartilhar
+            <ButtonIcon>
+              <ShareNetwork size={18} />
+            </ButtonIcon>
+          </Button>
         </GroupButton>
       </Content>
     </Container>
