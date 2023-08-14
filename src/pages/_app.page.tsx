@@ -4,6 +4,8 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from '@/styles/theme';
 import Head from 'next/head';
 import NextNprogress from 'nextjs-progressbar';
+import { DefaultSeo } from 'next-seo';
+import SEO from '../utils/next-seo.config';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -19,25 +21,25 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           name="description"
-          content="O Aviva Jovem é um projeto que iniciou-se em 2017, na direção do Pastor Josuel.
-          Já foram 5 edições do Aviva Jovem, com o objetivo de impactar cada vez mais nossa geração 🔥"
+          content="O Aviva Jovem é um projeto que iniciou-se em 2017, na direção do Pastor Josuel. Já foram 6 edições do Aviva Jovem, com o objetivo de impactar cada vez mais nossa geração 🔥"
         />
-        <meta name="image" content="/assets/images/banner.png" />
+        <meta name="image" content="/assets/images/banner.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Aviva Jovem #6" />
         <meta name="theme-color" content="#121210" />
         <meta name="google" content="notranslate" />
         <meta property="og:url" content="https://avivajovemadf.com" />
-        <meta property="og:image" content="/assets/images/banner.png" />
+        <meta property="og:image" content="/assets/images/banner.jpg" />
         <meta
           property="og:image:secure_url"
-          content="/assets/images/banner.png"
+          content="/assets/images/banner.jpg"
         />
         <meta property="og:image:alt" content="Aviva Jovem Adf" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1920" />
-        <meta property="og:image:height" content="1080" />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:width" content="1080" />
+        <meta property="og:image:height" content="1350" />
       </Head>
+      <DefaultSeo {...SEO} />
 
       <GlobalStyles />
 
