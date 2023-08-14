@@ -154,6 +154,11 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
       },
       {
         id: uuid(),
+        name: 'Micheli Barão',
+        office: 'Mídia',
+      },
+      {
+        id: uuid(),
         name: 'Letícia Batista',
         office: 'Tesoureira',
       },
