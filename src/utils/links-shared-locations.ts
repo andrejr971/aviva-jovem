@@ -32,7 +32,7 @@ export const sharedWithWhasapp = async () => {
 
     await navigator.share({
       files: [
-        new File([file], 'flyer.jpg', {
+        new File([file], 'Aviva Jovem #2023.jpg', {
           type: 'image/jpeg',
         }),
       ],
