@@ -23,14 +23,16 @@ export function HomeTemplate({
   return (
     <Container>
       <NextSeo
-        title={`Aviva Jovem - 2023`}
-        canonical={`https://avivajovemadf.vercel.app/`}
+        title={`AVIVA JOVEM - 2023`}
+        canonical={'https://avivajovemadf.vercel.app/'}
         openGraph={{
-          title: `Aviva Jovem - 2023`,
+          title: `AVIVA JOVEM - 2023`,
+          siteName: 'AVIVA JOVEM - 2023',
+          url: 'https://avivajovemadf.vercel.app/',
           images: [
             {
-              url: '/assets/images/banner.png',
-              alt: 'banner.png',
+              url: '/assets/images/banner.jpg',
+              alt: 'Banner aviva jovem',
             },
           ],
         }}

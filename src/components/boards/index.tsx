@@ -29,7 +29,7 @@ export function Boards({
         slides: { perView: 2, spacing: 24 },
       },
       '(max-width: 640px)': {
-        slides: { perView: 1, spacing: 12 },
+        slides: { perView: 1.05, spacing: 12 },
       },
     },
   });

@@ -26,15 +26,14 @@ export const sharedWithWhasapp = async () => {
   }
 
   if ('share' in navigator) {
-    const file = await fetch('/assets/images/flyer.png').then(response =>
+    const file = await fetch('/assets/images/flyer.jpg').then(response =>
       response.blob(),
     );
 
     await navigator.share({
-      text: message,
       files: [
-        new File([file], 'flyer.png', {
-          type: file.type,
+        new File([file], 'flyer.jpg', {
+          type: 'image/jpeg',
         }),
       ],
     });
