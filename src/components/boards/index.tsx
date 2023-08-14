@@ -23,10 +23,10 @@ export function Boards({
     initial: 0,
     breakpoints: {
       '(max-width: 1280px)': {
-        slides: { perView: 3, spacing: 24 },
+        slides: { perView: 3.1, spacing: 24 },
       },
       '(max-width: 960px)': {
-        slides: { perView: 2, spacing: 24 },
+        slides: { perView: 2.1, spacing: 24 },
       },
       '(max-width: 640px)': {
         slides: { perView: 1.05, spacing: 12 },
