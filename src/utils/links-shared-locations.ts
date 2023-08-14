@@ -26,20 +26,21 @@ export const sharedWithWhasapp = async () => {
   }
 
   if ('share' in navigator) {
-    navigator
-      .share({
-        title: 'teste',
-        text: 'jhsdjhjdsklhdsjh',
-      })
-      .then(() => {
-        alert('send');
-      })
-      .catch(error => {
-        alert(error.message);
-      });
+    const file = await fetch('/assets/images/flyer.png').then(response =>
+      response.blob(),
+    );
+
+    await navigator.share({
+      text: message,
+      files: [
+        new File([file], 'flyer.png', {
+          type: file.type,
+        }),
+      ],
+    });
   } else {
     window.location.href = `${url}?text=${encodeURIComponent(
       message,
-    )}&img='/assets/images/banner.jpeg'`;
+    )}&img='/assets/images/banner.png'`;
   }
 };
