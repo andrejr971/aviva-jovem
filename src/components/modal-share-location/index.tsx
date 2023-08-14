@@ -17,7 +17,7 @@ export function ModalShareLocation() {
         <div>09 de Setembro de 2023</div>
 
         <p>
-          Rua Nova Esperança, 64 - Jardim São Judas - Vargem Grande Paulista
+          Rua Nova Esperança, 64 - Vila São Judas Tadeu - Vargem Grande Paulista
         </p>
 
         <Button variant="secondary" onClick={handleShareLocationFirstDay}>

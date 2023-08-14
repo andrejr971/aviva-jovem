@@ -31,7 +31,7 @@ export function SectionInvite() {
 
         <GroupCard>
           <Card
-            address="Rua Nova Esperança, 64 - Jardim São Judas"
+            address="Rua Nova Esperança, 64 - Vila São Judas Tadeu"
             button={{
               children: (
                 <>

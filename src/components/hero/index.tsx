@@ -42,7 +42,7 @@ export function Hero() {
             alt="Imagem jovem adorando"
             imageUrl="/assets/images/gallery/hero/hero-1.png"
             description={{
-              address: 'Rua Nova Esperança, 64 - Jardim São Judas',
+              address: 'Rua Nova Esperança, 64 - Vila São Judas Tadeu',
               button: {
                 children: (
                   <>
