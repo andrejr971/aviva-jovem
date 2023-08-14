@@ -38,8 +38,8 @@ export const sharedWithWhasapp = async () => {
       ],
     });
   } else {
-    window.location.href = `${url}?text=${encodeURIComponent(
-      message,
-    )}&img='/assets/images/banner.png'`;
+    window.location.href = `${url}?text=${encodeURIComponent(message)}&img=${
+      window.location.origin
+    }/assets/images/banner.jpg`;
   }
 };

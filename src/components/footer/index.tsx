@@ -34,7 +34,7 @@ export function Footer() {
         <GroupInvite>
           <DivInvite>
             <Card
-              address="Rua Nova Esperança, 64 - Jardim São Judas"
+              address="Rua Nova Esperança, 64 - Vila São Judas Tadeu"
               button={{
                 children: (
                   <>
