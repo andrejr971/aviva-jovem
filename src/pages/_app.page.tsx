@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta name="image" content="/assets/images/banner.jpg" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Aviva Jovem #6" />
+        <meta property="og:title" content="Aviva Jovem #7" />
         <meta name="theme-color" content="#121210" />
         <meta name="google" content="notranslate" />
         <meta property="og:url" content="https://avivajovemadf.com" />
