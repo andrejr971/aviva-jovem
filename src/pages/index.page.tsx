@@ -1,6 +1,6 @@
 'use-client';
 
-import { GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 import { v4 as uuid } from 'uuid';
 
 import { HomeTemplate } from '@/templates';
@@ -25,7 +25,7 @@ export default function Home({
   );
 }
 
-export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const shepherds: ShepherdDTO[] = [
     {
       id: uuid(),
