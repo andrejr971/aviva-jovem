@@ -31,10 +31,14 @@ export const Container = styled.section`
 
 export const Content = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
   gap: 2.4rem;
 
   margin-top: 4rem;
+
+  ${media.lessThan('large')`
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  `}
 
   ${media.lessThan('medium')`
     grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));

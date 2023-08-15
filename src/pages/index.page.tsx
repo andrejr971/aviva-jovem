@@ -1,6 +1,6 @@
 'use-client';
 
-import { GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next';
 import { v4 as uuid } from 'uuid';
 
 import { HomeTemplate } from '@/templates';
@@ -25,7 +25,7 @@ export default function Home({
   );
 }
 
-export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
   const shepherds: ShepherdDTO[] = [
     {
       id: uuid(),
@@ -168,6 +168,18 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const lecturers: LecturerDTO[] = [
     {
       id: uuid(),
+      name: 'Pr. Ailton Santos',
+      office: 'Preletor',
+      profile: '/assets/images/lecturer/lecturer2.png',
+    },
+    {
+      id: uuid(),
+      name: 'Matheus do Sax',
+      office: 'Louvor',
+      profile: '/assets/images/lecturer/sing2.png',
+    },
+    {
+      id: uuid(),
       name: 'Pr. Besaliel Cavalcante',
       office: 'Preletor',
       profile: '/assets/images/lecturer/lecturer1.png',
@@ -177,12 +189,6 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
       name: 'Debora Cavalcante',
       office: 'Cantora',
       profile: '/assets/images/lecturer/sing.png',
-    },
-    {
-      id: uuid(),
-      name: 'Pr. Flávio Rocha',
-      office: 'Preletor',
-      profile: '/assets/images/lecturer/lecturer2.png',
     },
   ];
 
